@@ -39,22 +39,11 @@
     .hr-line { border: none; border-top: 1px solid #cccccc; margin: 10px 0; }
     .footer { text-align: center; font-size: 11px; color: #666; border-top: 2px solid #000080; margin-top: 10px; padding-top: 6px; }
     .progress-bar { background: #cccccc; height: 14px; width: 100%; border: 1px solid #888; }
-    .progress-fill { background: #000080; height: 100%; width: 38%; }
+    .progress-fill { background: #000080; height: 100%; width: 0%; }
   </style>
 </head>
 <body>
-
-  <div style="text-align:center; padding: 6px 0 4px;">
-    <span style="font-size:11px; color:#888;">&#9733;&#9733;&#9733; Welcome to My Homepage &#9733;&#9733;&#9733;</span>
-  </div>
-
-  <h1>
-    <span class="blink">&#128161;</span> Henry Mansfield's Homepage <span class="blink">&#128161;</span>
-  </h1>
-
-  <div class="marquee-wrap">
-    <span class="marquee-inner">&#9658; PhD Student in Electrical Engineering &nbsp;&nbsp;&nbsp; Currently: surviving quals &nbsp;&nbsp;&nbsp; Last updated: April 2026 &nbsp;&nbsp;&nbsp; Best viewed in Netscape Navigator 4.0 at 800x600 &nbsp;&nbsp;&nbsp;</span>
-  </div>
+  <h1>Henry Mansfield's Homepage</h1>
 
   <table class="nav-table">
     <tr>
@@ -70,12 +59,6 @@
     <tr>
       <td class="sidebar">
         <div class="sidebar-box">
-          <div class="title">Site Info</div>
-          Visitors:<br>
-          <span class="hit-counter">004821</span><br><br>
-          <span style="font-size:11px; color:#888; font-style:italic;">Best viewed 800x600</span>
-        </div>
-        <div class="sidebar-box">
           <div class="title">Quick Links</div>
           <a href="#" onclick="showSection('research');return false;" style="color:#0000cc; font-size:12px;">&#187; Research</a><br>
           <a href="#" onclick="showSection('projects');return false;" style="color:#0000cc; font-size:12px;">&#187; Projects</a><br>
@@ -86,33 +69,31 @@
           <div class="title">PhD Progress</div>
           <div style="font-size:11px; margin-bottom:3px;">Completion:</div>
           <div class="progress-bar"><div class="progress-fill"></div></div>
-          <div style="font-size:10px; color:#666; text-align:right;">38%</div>
+          <div style="font-size:10px; color:#666; text-align:right;">0%</div>
         </div>
       </td>
       <td class="content-area">
 
         <div id="section-home" class="section active">
-          <h2>&#128075; Welcome!</h2>
           <p>Hello and welcome to my personal homepage. I am a PhD student in the Department of Electrical Engineering. Use the navigation bar above to explore.</p>
           <div class="under-construction">
-            &#9888; UNDER CONSTRUCTION &#9888;<br>
             <span style="font-size:11px;">This site is always being updated. Check back soon!</span>
           </div>
           <hr class="hr-line">
           <h2>&#128240; News</h2>
           <ul class="bullet-list">
+            <li><b>August 2026</b> — Started year 1 of the PhD</li>
             <li><b>April 2026</b> — Site launched</li>
-            <li><b>2026</b> — Started year N of the PhD</li>
           </ul>
         </div>
 
         <div id="section-research" class="section">
           <h2>&#128300; Research</h2>
-          <p>I am a PhD student in Electrical Engineering. My research interests include:</p>
+          <p>My research interests include the following. They are continuing develop.</p>
           <ul class="bullet-list">
-            <li>[Research area 1]</li>
-            <li>[Research area 2]</li>
-            <li>[Research area 3]</li>
+            <li>Nonlinear Processes with different waves</li>
+            <li>Photonic crystals</li>
+            <li></li>
           </ul>
           <hr class="hr-line">
           <h3>Publications</h3>
@@ -128,31 +109,31 @@
         <div id="section-projects" class="section">
           <h2>&#128187; Projects</h2>
           <div class="project-card">
-            <div class="proj-title">&#9658; [Project Name]</div>
-            <div class="proj-meta">Status: In Progress &nbsp;|&nbsp; Tools: [Python, MATLAB, etc.]</div>
-            <p>What this project does in one or two sentences.</p>
-            <a href="#" class="email-link" style="font-size:12px;">[GitHub]</a>
+            <div class="proj-title">&#9658; Wearable PCB</div>
+            <div class="proj-meta">Status: In Progress &nbsp;|&nbsp; Tools: KiCad, Simplicity Studio, Bluetooth Low Energy</div>
+            <p>Small PCB for interfacing with flexible sweat based biosensors, reading sensitive analog data, and transmitting it to an app over bluetooth low energy. Designed and programmed with Emmanuel Zerefa.</p>
           </div>
           <div class="under-construction">&#128679; More coming soon &#128679;</div>
         </div>
 
         <div id="section-personal" class="section">
           <h2>&#128100; About Me</h2>
-          <p>Hi! I'm Henry. I'm a PhD student in Electrical Engineering at [University]. Before this I studied [undergrad]. I'm from [place].</p>
+          <p>Hi! I'm a PhD student in Electrical Engineering at CU Boulder. Before this I studied Electrical Engineering and Math at Rice University. I'm from Littleton, CO.</p>
           <hr class="hr-line">
           <h3>Hobbies</h3>
           <ul class="bullet-list">
-            <li>[Hobby 1]</li>
-            <li>[Hobby 2]</li>
-            <li>Coffee</li>
+            <li>Rock Climbing</li>
+            <li>Embedded Systems</li>
+            <li>Hiking</li>
+            <li>Math</li>
           </ul>
         </div>
 
         <div id="section-contact" class="section">
           <h2>&#128231; Contact</h2>
           <ul class="bullet-list">
-            <li><b>Email:</b> <a href="mailto:you@university.edu" class="email-link">you@university.edu</a></li>
-            <li><b>Office:</b> [Building, Room]</li>
+            <li><b>Email:</b> <a href="mailto:hmansfield73@gmail.com" class="email-link">hmansfield73@gmail.com</a></li>
+            <li><b>Office:</b> [tbd] </li>
             <li><b>GitHub:</b> <a href="https://github.com/henrymansfield" class="email-link">github.com/henrymansfield</a></li>
           </ul>
         </div>
@@ -162,8 +143,6 @@
   </table>
 
   <div class="footer">
-    <p>&#169; 2026 Henry Mansfield &nbsp;|&nbsp; PhD Student, Electrical Engineering</p>
-    <p style="margin-top:4px; font-style:italic;">Made with Notepad. No frameworks were harmed.</p>
   </div>
 
   <script>
